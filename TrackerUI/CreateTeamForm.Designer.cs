@@ -43,6 +43,7 @@
             this.emailAdressLabel = new System.Windows.Forms.Label();
             this.phoneNumberValue = new System.Windows.Forms.TextBox();
             this.phoneNumberLabel = new System.Windows.Forms.Label();
+            this.createMemberLabel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +111,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.createMemberLabel);
             this.groupBox1.Controls.Add(this.phoneNumberValue);
             this.groupBox1.Controls.Add(this.phoneNumberLabel);
             this.groupBox1.Controls.Add(this.emailAdressValue);
@@ -118,9 +120,11 @@
             this.groupBox1.Controls.Add(this.lastNameLabel);
             this.groupBox1.Controls.Add(this.firstNameValue);
             this.groupBox1.Controls.Add(this.firstNameLabel);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.groupBox1.Location = new System.Drawing.Point(33, 373);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(371, 217);
+            this.groupBox1.Size = new System.Drawing.Size(371, 278);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New Member";
@@ -129,7 +133,7 @@
             // 
             this.firstNameValue.Location = new System.Drawing.Point(204, 43);
             this.firstNameValue.Name = "firstNameValue";
-            this.firstNameValue.Size = new System.Drawing.Size(138, 35);
+            this.firstNameValue.Size = new System.Drawing.Size(138, 43);
             this.firstNameValue.TabIndex = 10;
             // 
             // firstNameLabel
@@ -145,9 +149,9 @@
             // 
             // lastNameValue
             // 
-            this.lastNameValue.Location = new System.Drawing.Point(204, 88);
+            this.lastNameValue.Location = new System.Drawing.Point(204, 87);
             this.lastNameValue.Name = "lastNameValue";
-            this.lastNameValue.Size = new System.Drawing.Size(138, 35);
+            this.lastNameValue.Size = new System.Drawing.Size(138, 43);
             this.lastNameValue.TabIndex = 12;
             // 
             // lastNameLabel
@@ -163,9 +167,9 @@
             // 
             // emailAdressValue
             // 
-            this.emailAdressValue.Location = new System.Drawing.Point(204, 132);
+            this.emailAdressValue.Location = new System.Drawing.Point(204, 131);
             this.emailAdressValue.Name = "emailAdressValue";
-            this.emailAdressValue.Size = new System.Drawing.Size(138, 35);
+            this.emailAdressValue.Size = new System.Drawing.Size(138, 43);
             this.emailAdressValue.TabIndex = 14;
             // 
             // emailAdressLabel
@@ -181,9 +185,9 @@
             // 
             // phoneNumberValue
             // 
-            this.phoneNumberValue.Location = new System.Drawing.Point(204, 176);
+            this.phoneNumberValue.Location = new System.Drawing.Point(204, 175);
             this.phoneNumberValue.Name = "phoneNumberValue";
-            this.phoneNumberValue.Size = new System.Drawing.Size(138, 35);
+            this.phoneNumberValue.Size = new System.Drawing.Size(138, 43);
             this.phoneNumberValue.TabIndex = 16;
             // 
             // phoneNumberLabel
@@ -197,12 +201,26 @@
             this.phoneNumberLabel.TabIndex = 15;
             this.phoneNumberLabel.Text = "Phone Number";
             // 
+            // createMemberLabel
+            // 
+            this.createMemberLabel.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.createMemberLabel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.createMemberLabel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.createMemberLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createMemberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.createMemberLabel.Location = new System.Drawing.Point(96, 225);
+            this.createMemberLabel.Name = "createMemberLabel";
+            this.createMemberLabel.Size = new System.Drawing.Size(150, 47);
+            this.createMemberLabel.TabIndex = 24;
+            this.createMemberLabel.Text = "Create Member";
+            this.createMemberLabel.UseVisualStyleBackColor = true;
+            // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(568, 602);
+            this.ClientSize = new System.Drawing.Size(660, 710);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMebmerDropdown);
@@ -238,5 +256,6 @@
         private System.Windows.Forms.Label phoneNumberLabel;
         private System.Windows.Forms.TextBox emailAdressValue;
         private System.Windows.Forms.Label emailAdressLabel;
+        private System.Windows.Forms.Button createMemberLabel;
     }
 }
